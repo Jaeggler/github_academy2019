@@ -1,0 +1,171 @@
+<!-- General HTML Data-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FabAcademy - Diego Santa Cruz Meoño</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Style Change for Nav Bar-->
+    <style>
+      .navbar{
+        margin-bottom:0;
+        border-radius:0;
+      }
+    </style>
+
+  </head>
+
+      <!--NavBar code-->
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container"><!--This container keeps navbar text in the center-->
+        <a class="navbar-brand" href="index.html">Diego Santa Cruz</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="week1.html">Final Project</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Assignments
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="week1.html">Week1</a>
+                <a class="dropdown-item" href="week2.html">Week2</a>
+                <a class="dropdown-item" href="week3.html">Week3</a>
+                <!-- <a class="dropdown-item" href="week4.html">Week4</a>
+                <a class="dropdown-item" href="week5.html">Week5</a>
+                <a class="dropdown-item" href="week6.html">Week6</a>
+                <a class="dropdown-item" href="week7.html">Week7</a>
+                <a class="dropdown-item" href="week8.html">Week8</a>
+                <a class="dropdown-item" href="week9.html">Week9</a>
+                <a class="dropdown-item" href="week10.html">Week10</a>
+                <a class="dropdown-item" href="week11.html">Week11</a>
+                <a class="dropdown-item" href="week12.html">Week12</a>
+                <a class="dropdown-item" href="week13.html">Week13</a>
+                <a class="dropdown-item" href="week14.html">Week14</a>
+                <a class="dropdown-item" href="week15.html">Week15</a>
+                <a class="dropdown-item" href="week16.html">Week16</a>
+                <a class="dropdown-item" href="week17.html">Week17</a>
+                <a class="dropdown-item" href="week18.html">Week18</a>
+                <a class="dropdown-item" href="week19.html">Week19</a>
+                <a class="dropdown-item" href="week20.html">Week20</a> -->
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+
+  </header>
+
+<!--All content goes here-->
+<main>
+  <div class="bg-light py-4">
+    <div class="container">
+        <h2>CAD Design</h2>
+          <p>For this week I want to 3D Print a card holder for my TCG cards.
+             I will be using Autodesk Fusion 360 and Affinity Designer (vector designer) for 3D modeling and logo designing, and 3D print with a Zortrax M200 printer.</p>
+          <p>Also I will be 3d modeling my final project concept.</p>
+          <br>
+        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_deckvault_open.png" alt="Card Holder">
+          <hr>
+        <h2>3D Design</h2>
+          <p>My "Deck Vault" will have 3 components: the body (largest part), top vault and top.
+           The body will held my deck and the top vault will be used to put dices or any other game utility.
+           Using Fusion I create 3 componentes, turning my part file into an assembly.</p>
+        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_components.png" alt="Component tree">
+          <br>
+          <p>First I will design the body. Similar to Inventor, Fusion 360 starts with a sketch <img src="fabdata/images/week3/w3_sketch_button.png" alt="Sketch button">.
+          Using the rectangular tool <img src="fabdata/images/week3/w3_rect_button.png" alt="Rectangular tool"> on Fusion I drew a "center rectangle", a rectangle with 2 points: the center and the diagonal.</p>
+          <br>
+        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_body_sketch.png" alt="Body sketch">
+          <br>
+          <p>Dimensions for this part will be: 70 mm wide, 55 mm large and 1.5 mm width for wall (3d printer minimal requirement).
+          Extrusion will give the design 115 mm height.</p>
+          <br>
+        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_height_extrude.png" alt="Body extrude">
+          <br>
+          <p>With base part completed, sharp edges will be smoothed with a 1.5 mm fillet on inner and outter edges.</p>
+          <p>Second piece is the top compartment (upper).
+          Same procedure as body: Rectangle tool on sketch (dimension will be 54.5x69.5mm and 1.5 width wall) and extrusion for basic form (21mm height and additional 1.5 mm for base).
+          Same fillet radius for sharp edges.</p>
+          <br>
+        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_upper_sketch.png" alt="Upper sketch">
+          <br>
+        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_upper_hgt_extrude.png" alt="Upper extrude">
+          <br>
+          <p>The "crown" feature (serving as hard stop and avoiding the upper component to fall), is added on the top face of the component.
+          This part will have a gap for top insertion.
+          To avoid problems with haging parts, I will be using a triangular shape which is deducted from the front face (using extrude operation as cut).</p>
+          <br>
+        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_upper_slide.png" alt="Upper slide">
+          <br>
+          <p>Finally the top will be rectangular with a triangular feature for easy open. Picture on left shows how looks.</p>
+          <br>
+        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_close.png" alt="Lid">
+          <br>
+          <hr>
+        <h2>2D Design</h2>
+          <p>Using Affinity Designer - a vector desginer - I will add a logo to the deck vault.
+          Fusion uses SVG *Scalable Vector Graphics) format, so I will need to export my file into that format.</p>
+          <p>Using an image as a base, I use the pen tool <img src="fabdata/images/week3/w3_pen_tool.png" alt="Pen tool"> to create the vector image. The pen tool allows to draw a line and then modify it freely.
+           With that, I can draw the contour for extrusion on Fusion.</p>
+          <br>
+        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_pen_mod.png" alt="Model edit with pen">
+          <br>
+        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_mtg_pen.png" alt="Final edit pen">
+          <br>
+          <p>Once the contour is finished, Affinity allows to export to SVG directly.</p>
+          <br>
+        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_mtg_export.png" alt="Export window">
+          <br>
+          <p>Once exported, I return to Fusion o insert it on my 3D.</p>
+          <br>
+        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_mtg_logo.png" alt="Final logo">
+          <br>
+          <p>Once again in Fusion, I create a sketch, add the image, rescale it.
+          Thanks to the SVG format, the file will scale nicely without losing resolution.</p>
+          <br>
+        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_mtg_insert.png" alt="Insert on fusion">
+          <br>
+          <p>Once the image is well placed, the extrusion is made.
+          To make the extrusion better fit for 3D Print, an small fillet (0.8mm) is used.
+          Now the the solid is ready for 3D print on next assingment.</p>
+          <br>
+        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_mtg_final.png" alt="Final Model">
+          <br>
+          <hr>
+          <p>Finally the files are <a href="fabdata/files/week3/week3.rar">here.</a></p>
+    </div>
+  </div>
+</main>
+
+<!--End of content-->
+
+<!--Footer-->
+<footer class="text-muted">
+  <p class="text-center">Diego Santa Cruz Meono</p>
+  <p class="text-center">FabAcademy 2019</p>
+</footer>
+<!--End of footer-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="bootstrap\js\jquery-slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
