@@ -148,7 +148,30 @@
         <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_mtg_final.png" alt="Final Model">
           <br>
           <hr>
-          <p>Finally the files are <a href="fabdata/files/week3/week3.rar">here.</a></p>
+        <h2>Project modeling</h2>
+        <p>Using Fusion 360 I modeled my Card Reader.
+           It is a 3 part assambly with a load bay, where cards rest before getting scan; a central bay where a hanging camera will get card name; and a unload bay, which will hold all cards already checked.
+           Each component is modeled on a separeted file and join together on a general assembly file (GA_CardReader on the image below).</p>
+        <p>For this modeling, general considerations where taken:</p>
+        <ul>
+          <li>General card dimension was set as 65x90 mm (real card dimension are 63x88 mm).</li>
+          <li>All "walls" should be 3 mm to consider 3mm MDF material when laser cutting.</li>
+        </ul>
+          <p>When operating, the cards should move from the load bay(red face component) to the camera (component with 2 green cards representing electronics).
+          The mechanical system to card movement between modules is not clear, thats why are not modeled yet.
+          Finally the cards are moved again to the final repository (blue face component).</p>
+          <p>One of the main problems to take care in this project is the mechanical aparatus to make cards move. The load bay first issue is to make cards available on top to move
+          to the next area. A spring is my first idea with servos connected to a Arduino board (or FABduino) as operators.</p>
+        <br>
+        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_finalp.png" alt="Final project model">
+        <br>
+        <p>Finally the files are here:</p>
+        <ul>
+          <li><a href="fabdata/files/week3/week3.rar">This week projects</a></li>
+          <li><a href="fabdata/files/week3/w3_vault.rar">Card holder</a></li>
+          <li><a href="fabdata/files/week3/w3_svgfiles.rar">SVG files</a></li>
+          <li><a href="fabdata/files/week3/w3_finalp.rar">Final project model</a></li>
+        </ul>
     </div>
   </div>
 </main>
