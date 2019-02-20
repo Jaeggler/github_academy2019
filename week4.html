@@ -16,12 +16,13 @@
         margin-bottom:0;
         border-radius:0;
       }
+
     </style>
 
   </head>
 
       <!--NavBar code-->
-  <body>
+  <body class="container py-5 bg-light" >
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container"><!--This container keeps navbar text in the center-->
@@ -73,9 +74,56 @@
 
 <!--All content goes here-->
 <main>
-  <div class="bg-light py-4">
+
+  <div class="bg-white py-4 shadow rounded">
     <div class="container">
-      <h2>Computer controlled cutting</h2>
+
+
+      <!-- Objectives -->
+      <div class="row px-3 py-3">
+        <div class="col-8">
+          <h1>Computer Controlled Cutting</h1>
+          <br>
+          <h4>Assigments: Laser cutting</h4>
+          <p>
+            <ul>
+              <li>Group: characterize your lasercutter's focus, power, speed, rate, kerf, and joint clearance</li>
+              <li>Design, lasercut, and document a parametric press-fit construction kit, which can be assembled in multiple ways. Account for the lasercutter kerf.</li>
+            </ul>
+          <h4>Assigments: Vinyl cutting</h4>
+            <ul>
+              <li>Cut something on the vinyl cutter</li>
+            </ul>
+          </p>
+        </div>
+        <div class="col-4">
+        </div>
+      </div>
+      <hr>
+
+      <div class="row px-3">
+        <div class="col-8">
+          <p>
+            <h2>Vinyl cutting</h2>
+            <br>
+            <h4>Machine characteristics</h4>
+
+          </p>
+        </div>
+        <div class="col-4">
+
+          <p>
+            <h5>Downloads</h5>
+            <ul>
+              <li>Image file</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <hr>
+
+
+      <h4>Computer controlled cutting</h4>
         <p>This week assignments will be a design cut on vinyl, laser cutting test and a parametric kit are the objectives.</p>
         <p>The machines used for this task will be a Roland GX-24 (vinyl cut) and a Trotec Speedy400.
            Details about each machine can be found <a href="https://www.neopost.dk/sites/neopost.dk/files/Product/Brochure/gx-24_datasheet.pdf">here</a> for Roland
@@ -104,20 +152,39 @@
             <br>
             <p>Using tape, I covered the zone where my cut is, trying to pull it from the paper.
             Carefully I pull and got all vinyl pieces needed on tape. Next I place the tape on my laptop and voila! the job is really nice!.</p>
-        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week4/w4_ontape.png" alt="Vinyl on tape">
-        <br>
-        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week4/w4_placing.png" alt="Vinyl on tape">
-        <br>
-        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week4/w4_final.png" alt="Vinyl on tape">
+            <br>
+
+        <div class="row">
+          <div class="col">
+            <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week4/w4_ontape.png" alt="Vinyl on tape">
+          </div>
+          <div class="">
+            <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week4/w4_placing.png" alt="Vinyl on tape">
+          </div>
+          <div class="">
+            <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week4/w4_final.png" alt="Vinyl on tape">
+          </div>
+        </div>
+
         <br>
         <hr>
+
         <h2>Laser cut</h2>
           <p> My personal assignment was developed using Fusion 360. It is a triangular shape with 2 side and 1 central slot. Also an angular shape to connect to other shapes.</p>
-          <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week4/w4_tri_fu_model.png" alt="Piece model">
-          <br>
-          <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week4/w4_tri_fu_final.png" alt="Piece final">
-          <br>
-          <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week4/w4_angle_fu_final.png" alt="Angle final">
+            <br>
+
+        <div class="row">
+          <div class="col">
+            <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week4/w4_tri_fu_model.png" alt="Piece model">
+          </div>
+          <div class="col">
+            <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week4/w4_tri_fu_final.png" alt="Piece final">
+          </div>
+          <div class="col">
+            <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week4/w4_angle_fu_final.png" alt="Angle final">
+          </div>
+        </div>
+
           <br>
           <p>When designed, all dimension are related to the width of the outter tab (15mm in this case).
           Offset addition to the outter tab was 0.15 mm.</p>
@@ -144,11 +211,19 @@
           <br>
           <p>This looks like when finished.</p>
           <br>
-          <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week4/w4_final_laser.png" alt="Final work">
-          <br>
-          <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week4/w4_assy.png" alt="Assemble">
+
+        <div class="row">
+          <div class="col">
+            <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week4/w4_final_laser.png" alt="Final work">
+          </div>
+          <div class="col">
+            <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week4/w4_assy.png" alt="Assemble">
+          </div>
+        </div>
+
           <br>
           <hr>
+
           <h2>Downloads</h2>
             <p>Here are the files for this week:</p>
             <ul>
@@ -173,5 +248,7 @@
     <script src="bootstrap\js\jquery-slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
   </body>
+
 </html>
