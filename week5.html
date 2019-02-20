@@ -96,6 +96,9 @@
         <p>MIT client software for machine using.
            I need to load a PNG file (exported from Eagle or the FabModule), and the sofware will create all traces and set correct width.</p>
            <hr>
+           <br>
+        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week5/w5_fabmodule.png" alt="Fabmodule">
+           <br>
       <h2>Setting up</h2>
           <p>First we need to download the PNG file from Brian's model guide.
             Next we need to load the FabModule.
@@ -106,28 +109,52 @@
             The FabModule allows to create the milling path (auto), trace width and speed.
             For my job I will set the machine to mill traces about 1/64" diamater, 3 mm/s speed and -0.08 z-axis depth.
             Finally we create the .rml file but before we need to place the toll on origin.</p>
+            <br>
         <h2>Origin</h2>
           <p>For origin setting, we place our substrate on the printer with double sided tape.
              Then change the "Xmin" and "Ymin" parameter to find physical 0 point. When defined, the tool is lowed to check correct tool penetration.
              Finally we send the job and CNC starts to work.</p>
+             <br>
+          <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week5/w5_modela.jpg" alt="Rolland modela MDX-20">
+             <br>
         <h2>PCB Milling</h2>
           <p>Once the machine is working it is important to keep cheking periodically if it is doing right.
              Some problems that might occur are: tool breaking and substrate shifting.
              If something like that happens, the job has to sent again.</p>
+             <br>
+          <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week5/w5_cutting1.jpg" alt="Mill1">
+            <br>
+          <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week5/w5_cutting2.jpg" alt="Mill2">
+            <br>
+          <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week5/w5_cutting3.jpg" alt="Mill3">
+            <br>
+          <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week5/w5_cutting4.jpg" alt="Mill4">
+             <br>
           <h2>Cutting</h2>
           <p>When milling process has concluded, we have to trim the extra material in the board using a guillotine.
              It is important to pre heat the board with a heat gun to make the cutting easeier.
              After that, a little sanding to avoid splinters and voila!, the PCB is ready for soldering.</p>
+             <br>
+          <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week5/w5_aftercut.jpg" alt="Ready for solder!">
+             <br>
           <h2>Soldering</h2>
             <p>First thing: Soldering training.
                 I had to no experience with soldering electronics before, so started to solder some broken componentes to one of my discarded boards.
                 Some tests later, started with my final board.
                 Brian's guide detailed every component I had to use, so I could find everything for my self in the shelf.
                 Finally after an hour I had my board ready.</p>
+                <br>
+             <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week5/w5_components.jpg" alt="Components">
+                <br>
+             <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week5/w5_soldtest.jpg" alt="Soldering test">
+                <br>
              <p>I took a couple of hours to find the appropriate soldering technique.
                 It is something you need to try for your self and can't be read in a book.
                 It is important to check the work at least twice.
                 Make sure the components are in the correct place and check for shorts with multimeter.</p>
+                <br>
+             <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week5/w5_soldering.jpg" alt="Soldering">
+                <br>
             <h2>Programming</h2>
               <p>First thing is to download the firmware source code and extract the zip file.
                 Find the code directory and run make, this will make the hex file that will be on the Tiny45.
@@ -136,10 +163,13 @@
                 Now we plug the programmer to PC and connect the board to the programmer.
                 Run "make flash" to programm the board.
                 Several bars are shown on the screen and if everything is correct a green light should be display.</p>
+                <br>
+             <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week5/w5_testing.jpg" alt="Testing">
+                <br>
             <h2>Testing</h2>
               <p>Connected my FabISP to my computer and it recognizes!</p>
          <br>
-        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week4/w4_aff_juggler.png" alt="Juggler decal">
+        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week5/w5_usbtiny_recon.png" alt="Usb_tiny">
          <br>
   </div>
 </main>
