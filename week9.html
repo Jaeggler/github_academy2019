@@ -1,0 +1,213 @@
+<!-- General HTML Data-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FabAcademy - Diego Santa Cruz Meoño</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Style Change for Nav Bar-->
+    <style>
+      .navbar{
+        margin-bottom:0;
+        border-radius:0;
+      }
+
+    </style>
+
+  </head>
+
+      <!--NavBar code-->
+  <body class="container py-5 bg-light" >
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container"><!--This container keeps navbar text in the center-->
+        <a class="navbar-brand" href="index.html">Diego Santa Cruz</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="week1.html">Final Project</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Assignments
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="week1.html">Week1</a>
+                <a class="dropdown-item" href="week2.html">Week2</a>
+                <a class="dropdown-item" href="week3.html">Week3</a>
+                <a class="dropdown-item" href="week4.html">Week4</a>
+                <a class="dropdown-item" href="week5.html">Week5</a>
+                <a class="dropdown-item" href="week6.html">Week6</a>
+                <a class="dropdown-item" href="week7.html">Week7</a>
+                <a class="dropdown-item" href="week8.html">Week8</a>
+                <a class="dropdown-item" href="week9.html">Week9</a>
+                <!-- <a class="dropdown-item" href="week10.html">Week10</a>
+                <a class="dropdown-item" href="week11.html">Week11</a>
+                <a class="dropdown-item" href="week12.html">Week12</a>
+                <a class="dropdown-item" href="week13.html">Week13</a>
+                <a class="dropdown-item" href="week14.html">Week14</a>
+                <a class="dropdown-item" href="week15.html">Week15</a>
+                <a class="dropdown-item" href="week16.html">Week16</a>
+                <a class="dropdown-item" href="week17.html">Week17</a>
+                <a class="dropdown-item" href="week18.html">Week18</a>
+                <a class="dropdown-item" href="week19.html">Week19</a>
+                <a class="dropdown-item" href="week20.html">Week20</a> -->
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+
+  </header>
+
+<!--All content goes here-->
+<main>
+
+  <div class="bg-white py-4 shadow rounded">
+    <div class="container">
+
+
+      <!-- Objectives -->
+      <div class="row px-3 py-3">
+        <div class="col-8">
+          <h1>Embedded Programming</h1>
+          <p>
+            <ul>
+              <li>Group: Test runout, alignment, speeds, feeds, and toolpaths for your machine</li>
+              <li>Individual assignment: Read a microcontroller data sheet.</li>
+              <li>Individual assignment: Program your board to do something, with as many different programming languages and programming environments as possible.</li>
+            </ul>
+          </p>
+        </div>
+        <div class="col-4">
+        </div>
+      </div>
+      <hr>
+
+      <!-- MAIN ROW -->
+      <div class="row px-3">
+
+                <!-- Main Info -->
+        <div class="col-8">
+          <p>
+            <h4>Micro Datasheet</h4>
+            <p>In this assigment I will be using the Electronics Design week board I did.
+               This is an attiny45 micro from AVR.
+               I found the micro datasheet at this link.</p>
+
+            <p>Reading a micro might be a long and messy task.
+              I used Sparkfun Electronics guide "How to read a Datasheet" (link here),
+               which summaries the most important stuff when not having experience with electronics.</p>
+               <br>
+            <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week9/w9_tiny45_pinout.png" alt="">
+               <br>
+
+            <p>According to the guide, I will be looking for: summary, specifications, pinout, absolute ratings, recommended operation conditions and example schematics.</p>
+            <p>Attiny 45 it's a 8 pin microcontroller.
+               Taking out VCC and GROUND pins, the micro have 6 I/O pins from which RESET is usually left alone.
+                Works with 2.7 to 5.5 Volts.</p>
+            <p>It does not have hardware serial comm, which might be solved with a software based one.
+               Could be hard coded directly or "SoftwareSerial" library could be used.</p>
+            <p>The micro have 4K storage, meaning it have really short space. The lighter the code, the better.</p>
+          </p>
+          <br>
+
+           <h4>Arduino</h4>
+             <p>I will be coding to the Week7 board with Arduino languaje and C to blink the LED on Pin 2.
+                To program the micro, an arduino as ISP will be used.</p>
+             <p>Using the Arduino IDE, we load the blink example.
+                From "File" menu >> Examples >> Basics >> Blink.
+                This code needs to be prepared to match the board pinout.</p>
+
+             <p>Week 7 board have it's LED on Pin2, so I need to change the code from LED_BUILTIN to pin 2.
+                I created a variable to storage the pin number and labeled "ledpin".
+                The last part of the code is the standard blink part which turns light on/off with digitalWrite() function.</p>
+                <br>
+                <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week9/w9_ard_code_p1.png" alt="">
+                <br>
+
+             <p>Now I load it to the board and see the code takes 942 bytes of memory from the 4096 bytes available (22%).</p> 
+
+                <br>
+            <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week9/w9_arduino_blink_usage.png" alt="">
+               <br>
+               <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week9/w9_ard_final.png" alt="">
+               <br>
+
+
+            <h4>C Language</h4>
+              <p>Arduino language is just a variation of C++.
+                 Programming with C directly is similar but looks weird for someone who does not know about registers.</p>
+
+              <p>Using Arduino IDE, the first part of the code is to set CPU speed.
+                 Attiny45 runs usually at 8MHz, so speed is defined as a whole number.
+                 Also it is important to include avr library since we are working with an attiny which is an avr based microcontroller.</p>
+                 <br>
+             <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week9/w9_c_code_p1.png" alt="">
+                <br>
+              <p>The main function (void function which loops infinitely) contains the code to set all PORTB pins.
+                 PORTB stands as a "group" name for those pins. Attiny45 "PB" pins are physical pin 1 (PB5), 2 (PB3), 3 (PB4), 5 (PB0), 6 (PB1) and 7 (PB2).
+                 Physical pins 4 and 8 are for GROUND and VCC.</p>
+              <br>
+              <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week9/w9_tiny45_pinout_color.jpg" alt="">
+              <br>
+              <p>A "For" function with no condition runs the snippet with toggle function for light on/off the LED while delaying 1 second between actions.</p>
+              <br>
+              <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week9/w9_c_code_p2.png" alt="">
+              <br>
+              <p>Finally when loading the code, an amazing low memory usage shows why using c is efficient.</p>
+              <br>
+              <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week9/w9_c_code_space.png" alt="">
+              <br>
+              <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week9/w9_c_final.png" alt="">
+              <br>
+        </div>
+
+        <!-- Side Info -->
+        <div class="col-4">
+          <p>
+            <h5>Downloads</h5>
+            <ul>
+              <li> <a href="fabdata\files\week9\week9.rar" download>Week 7 files</a></li>
+            </ul>
+          </p>
+        </div>
+
+      </div>  <!--   Row Closure -->
+
+    </div>  <!--Container Closure -->
+
+</div> <!--Big Div Closure -->
+
+</main>
+
+<!--End of content-->
+
+<!--Footer-->
+<footer class="text-white bg-dark">
+  <p class="text-center">Diego Santa Cruz Meono</p>
+  <p class="text-center">FabAcademy 2019</p>
+</footer>
+<!--End of footer-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="bootstrap\js\jquery-slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+
+</html>
