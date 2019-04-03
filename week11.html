@@ -1,0 +1,219 @@
+<!-- General HTML Data-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FabAcademy - Diego Santa Cruz Meoño</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Style Change for Nav Bar-->
+    <style>
+      .navbar{
+        margin-bottom:0;
+        border-radius:0;
+      }
+
+    </style>
+
+  </head>
+
+      <!--NavBar code-->
+  <body class="container py-5 bg-light" >
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container"><!--This container keeps navbar text in the center-->
+        <a class="navbar-brand" href="index.html">Diego Santa Cruz</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="week1.html">Final Project</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Assignments
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="week1.html">Week1</a>
+                <a class="dropdown-item" href="week2.html">Week2</a>
+                <a class="dropdown-item" href="week3.html">Week3</a>
+                <a class="dropdown-item" href="week4.html">Week4</a>
+                <a class="dropdown-item" href="week5.html">Week5</a>
+                <a class="dropdown-item" href="week6.html">Week6</a>
+                <a class="dropdown-item" href="week7.html">Week7</a>
+                <a class="dropdown-item" href="week8.html">Week8</a>
+                <a class="dropdown-item" href="week9.html">Week9</a>
+                <a class="dropdown-item" href="week10.html">Week10</a>
+                <a class="dropdown-item" href="week11.html">Week11</a>
+                <!-- <a class="dropdown-item" href="week12.html">Week12</a>
+                <a class="dropdown-item" href="week13.html">Week13</a>
+                <a class="dropdown-item" href="week14.html">Week14</a>
+                <a class="dropdown-item" href="week15.html">Week15</a>
+                <a class="dropdown-item" href="week16.html">Week16</a>
+                <a class="dropdown-item" href="week17.html">Week17</a>
+                <a class="dropdown-item" href="week18.html">Week18</a>
+                <a class="dropdown-item" href="week19.html">Week19</a>
+                <a class="dropdown-item" href="week20.html">Week20</a> -->
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+
+  </header>
+
+<!--All content goes here-->
+<main>
+
+  <div class="bg-white py-4 shadow rounded">
+    <div class="container">
+
+
+      <!-- Objectives -->
+      <div class="row px-3 py-3">
+        <div class="col-8">
+          <h1>Input Devices</h1>
+          <p>
+            <ul>
+              <li>Group: Test runout, alignment, speeds, feeds, and toolpaths for your machine</li>
+              <li>Individual assignment: Measure something. Add a sensor to a microcontroller board that you have designed and read it.</li>
+            </ul>
+          </p>
+        </div>
+        <div class="col-4">
+        </div>
+      </div>
+      <hr>
+
+      <!-- MAIN ROW -->
+      <div class="row px-3">
+
+                <!-- Main Info -->
+        <div class="col-8">
+          <p>
+            <h4>Planning circuit</h4>
+            <p>For this assignment I will make an attiny45-based board with a button, similar to the 'electronics design' assigment.
+               This board will serve too for networking week, adding a 2x2 header and FTDI connector.
+               Also, will add two red LED to output a program in the board.</p>
+            <p>The code will make the board to turn both LEDs at different times when button is pushed.</p>
+
+
+           <h4>Simulation</h4>
+             <p>The difference between this assignment and week 7 is we are adding FTDI and 2x2 header, intended for serial comm.
+                Also we are connecting an extra LED to the free PIN.</p>
+             <p>The bill of materials used here is: (without FTDI and 2x2 headers)</p>
+             <ul>
+               <li>Attiny45 x1</li>
+               <li>Red LED x1</li>
+               <li>1uF Capacitor x1</li>
+               <li>10 kOhm Resistor x2</li>
+               <li>499 Ohm Resistor x2</li>
+               <li>Pushbutton x1</li>
+             </ul>
+                <br>
+                <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week11/w11_simulation.png" alt="">
+                <br>
+                
+
+            <h4>Programming</h4>
+              <p>Similar to previous weeks, the code will read when the button is press and turn the LEDs on.</p>
+                 <br>
+             <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week11/w11_sim_code.png" alt="">
+                <br>
+              <p>Adding some conditionals, I can make the LEDs behave different when pressing one more time (counter).</p>
+              <br>
+              <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week11/w11_sim_code2.png" alt="">
+              <br>
+              <p>And thats it! Now I have to mill my board and program it with this code.</p>
+              <p>Can find the simulation <a href="">here</a></p>
+              <br>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/1e2CUOWLbFw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <br>
+              
+            <h4>Design</h4>
+            <p>For design steps with Eagle, check week 7.</p>
+            <p>Create project, schematics and add all components to it. This time, I tried to make less "physical" connections but more labeled ones.
+               Once all is connected, we start board design.</p>
+            <br>
+            <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week11/w11_schematic.png" alt="">
+            <br>
+
+            <p>I first arrange components to their possible position.
+               When ok, start to route. When finished, exported PNG for milling process.</p>
+            <br>
+            <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week11/w11_board_v2.png" alt="">
+              <br>
+
+
+            <h4>Milling and soldering</h4>
+            <p>For milling process, check week 5.</p>
+            <p>After milling noticed some tracks were connected! Used a cutter and then cleaned with a toothbrush.
+               Also, due to the use of a broken 1/64 tool, the board had some debri on it. Had to remove with a lime.</p>
+            <br>
+            <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week11/w11_mill_result.png" alt="">
+            <br>
+            <p>Soldered, loaded the code from simulation (little fix to turn on both LEDs) and tried continuity. Everything was ok!</p>
+            <br>
+            <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week11/w11_solder_result.png" alt="">
+                <br>
+
+            <h4>Programming</h4>
+            <p>The program was improved a bit (image), but keep the same idea from simulation</p>
+              <br>
+          <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week11/w11_code_final.png" alt="">
+              <br>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/girW8Gbxh-I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <br>
+
+
+
+        </div>
+
+        <!-- Side Info -->
+        <div class="col-4">
+          <p>
+            <h5>Downloads</h5>
+            <ul>
+              <li> <a href="fabdata\code\week11\week11.rar" download>Eagle - Week 11 files</a></li>
+              <li> <a href="fabdata\code\week11\week11.rar" download>Code - Week 11 files</a></li>
+            </ul>
+          </p>
+        </div>
+
+      </div>  <!--   Row Closure -->
+
+    </div>  <!--Container Closure -->
+
+</div> <!--Big Div Closure -->
+
+</main>
+
+<!--End of content-->
+
+<!--Footer-->
+<footer class="text-white bg-dark">
+  <p class="text-center">Diego Santa Cruz Meono</p>
+  <p class="text-center">FabAcademy 2019</p>
+</footer>
+<!--End of footer-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="bootstrap\js\jquery-slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+
+</html>
