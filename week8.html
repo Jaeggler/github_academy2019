@@ -54,7 +54,7 @@
                 <a class="dropdown-item" href="week9.html">Week9</a>
                 <a class="dropdown-item" href="week10.html">Week10</a>
                 <a class="dropdown-item" href="week11.html">Week11</a>
-                <!-- <a class="dropdown-item" href="week12.html">Week12</a>
+                <a class="dropdown-item" href="week12.html">Week12</a>
                 <a class="dropdown-item" href="week13.html">Week13</a>
                 <a class="dropdown-item" href="week14.html">Week14</a>
                 <a class="dropdown-item" href="week15.html">Week15</a>
@@ -62,7 +62,7 @@
                 <a class="dropdown-item" href="week17.html">Week17</a>
                 <a class="dropdown-item" href="week18.html">Week18</a>
                 <a class="dropdown-item" href="week19.html">Week19</a>
-                <a class="dropdown-item" href="week20.html">Week20</a> -->
+                <a class="dropdown-item" href="week20.html">Week20</a>
               </div>
             </li>
           </ul>
@@ -104,7 +104,7 @@
         <div class="col-8">
           <p>
             <h4>Personal Assignment - Model Design</h4>
-            <p>I was needing a table for my 3D Printer, with lower slots to keep material cartridge, filament spools and tools.
+            <p class="text-justify">I was needing a table for my 3D Printer, with lower slots to keep material cartridge, filament spools and tools.
                Main dimensions were 400 x 400 mm on top, and aproximatly 650 mm height.
                The structure must be rigid enough to reduce normal vibrations during work time, to avoid construction problems.
                I will use a 1/8" tool for this assignment. All will be assembled with only wood joints.</p>
@@ -112,20 +112,20 @@
                <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week8/w8_wood_joints.jpg" alt="">
               <br>
 
-            <p>Made a basic box structure with 4 walls and 3 inner platforms to have 3 slots.
+            <p class="text-justify">Made a basic box structure with 4 walls and 3 inner platforms to have 3 slots.
                Files can be found at the Downloads section.
                Used simple pressure joints for assembly (check wood joints picture).</p>
                <br>
             <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week8/w8_fusion_explode.png" alt="">
                <br>
 
-            <p>Once all files were designed, made a drawing of each piece.
+            <p class="text-justify">Once all files were designed, made a drawing of each piece.
                This allows me to export the drawing as a DXF files, to later send it to the Shopbot program.</p>
                <br>
             <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week8/w8_pieces_dist.png" alt="">
                <br>
 
-            <p>Some comments:
+            <p class="text-justify">Some comments:
                I made a simple model, but keep it parametric because I didnt know which material thickness we have available at the lab.
                Finally used 12.5 mm MDF material.
                Originally, I made relief ears on each slot, but was noticed the machine software takes care of that, so removed.</p>
@@ -136,11 +136,11 @@
           <br>
 
            <h4>Machine Settings</h4>
-             <p>Loaded my DXF file to the Shopbot software Partworks. Create a new file from "Create a new file" option.</p>
-             <p>First we need to add all pieces to the working area. This is donde with the "Align Objects".
+             <p class="text-justify">Loaded my DXF file to the Shopbot software Partworks. Create a new file from "Create a new file" option.</p>
+             <p class="text-justify">First we need to add all pieces to the working area. This is donde with the "Align Objects".
                 Once all pieces are placed correctly (nested), we need to create the toolpath for the Shopbot.
                  This is done with "2D Profile Toolpath" button. There we will have to set up the parameters:</p>
-             <p>
+             <p class="text-justify">
                <ul>
                  <li>Cutting Depths: We are using a 12.5 mm and want to get throught it, so select a passing distance (check parameters next).</li>
                  <li>Tool Selection: We are needing a End mill tool.</li>
@@ -148,10 +148,10 @@
                </ul>
              </p>
 
-             <p>Next step take us to a simulation of our work. If seems nice, we go to setting machine.</p>
+             <p class="text-justify">Next step take us to a simulation of our work. If seems nice, we go to setting machine.</p>
 
 
-             <p>When the program is already selected, we have to prepare the machine.
+             <p class="text-justify">When the program is already selected, we have to prepare the machine.
                 The first thing is secure MDF to machine work-table. I'm using wood screws scattered through the table.
                 Second, change the tool to the selected one.
 
@@ -168,11 +168,11 @@
              <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week8/w8_tool_change.jpg" alt="">
                 <br>
                 <br>
-                <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week8/w8_cutting.jpg" alt="">
-                   <br>
+                 <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week8/w8_cutting.jpg" alt="">
+                <br>
 
-                Finally, send the program and the Shopbot will start its task. The parameters summary are:</p>
-                <p>
+                <p>Finally, send the program and the Shopbot will start its task. The parameters summary are:</p>
+                <p class="text-justify">
                   <ul>
                     <li>Tool: 1/8" Straight</li>
                     <li>Speed: 50.8mm/sec</li>
@@ -188,18 +188,18 @@
                 <br>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/B7QvKJbo95k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <br>
-                <p>Some comments: If closing gaps in the vectors is needed, using "Join vectors" will help.
+                <p class="text-justify">Some comments: If closing gaps in the vectors is needed, using "Join vectors" will help.
                   Also, as said before, I remove the slot's relief ears to be added in this part, but we forgot to do that.</p>
                   <br>
 
             <h4>Assembly</h4>
-              <p>Using a rubber maul I started with assembly. I thought would have problems without slot reliefs, but in the end it was really smooth.</p>
+              <p class="text-justify">Using a rubber maul I started with assembly. I thought would have problems without slot reliefs, but in the end it was really smooth.</p>
                  <br>
              <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week8/w8_assemble.jpg" alt="">
                 <br>
                 <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week8/w8_halfway.jpg" alt="">
               <br>
-                <p>It's completed!</p>
+              <p class="text-justify">It's completed!</p>
                 <br>
                 <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week8/w8_final.jpg" alt="">
                    <br>

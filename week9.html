@@ -54,7 +54,7 @@
                 <a class="dropdown-item" href="week9.html">Week9</a>
                 <a class="dropdown-item" href="week10.html">Week10</a>
                 <a class="dropdown-item" href="week11.html">Week11</a>
-                <!-- <a class="dropdown-item" href="week12.html">Week12</a>
+                <a class="dropdown-item" href="week12.html">Week12</a>
                 <a class="dropdown-item" href="week13.html">Week13</a>
                 <a class="dropdown-item" href="week14.html">Week14</a>
                 <a class="dropdown-item" href="week15.html">Week15</a>
@@ -62,7 +62,7 @@
                 <a class="dropdown-item" href="week17.html">Week17</a>
                 <a class="dropdown-item" href="week18.html">Week18</a>
                 <a class="dropdown-item" href="week19.html">Week19</a>
-                <a class="dropdown-item" href="week20.html">Week20</a> -->
+                <a class="dropdown-item" href="week20.html">Week20</a>
               </div>
             </li>
           </ul>
@@ -103,42 +103,42 @@
         <div class="col-8">
           <p>
             <h4>Micro Datasheet</h4>
-            <p>In this assigment I will be using the Electronics Design week board I did.
+            <p class="text-justify">In this assigment I will be using the Electronics Design week board I did.
                This is an attiny45 micro from AVR.
                I found the micro datasheet at this <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2586-AVR-8-bit-Microcontroller-ATtiny25-ATtiny45-ATtiny85_Datasheet-Summary.pdf">link.</a></p>
 
-            <p>Reading a micro might be a long and messy task.
+            <p class="text-justify">Reading a micro might be a long and messy task.
               I used Sparkfun Electronics guide "How to read a Datasheet" <a href="https://www.sparkfun.com/tutorials/223">(link here)</a>,
                which summaries the most important stuff when not having experience with electronics.</p>
                <br>
             <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week9/w9_tiny45_pinout.png" alt="">
                <br>
 
-            <p>According to the guide, I will be looking for: summary, specifications, pinout, absolute ratings, recommended operation conditions and example schematics.</p>
-            <p>Attiny 45 it's a 8 pin microcontroller.
+            <p class="text-justify">According to the guide, I will be looking for: summary, specifications, pinout, absolute ratings, recommended operation conditions and example schematics.</p>
+            <p class="text-justify">Attiny 45 it's a 8 pin microcontroller.
                Taking out VCC and GROUND pins, the micro have 6 I/O pins from which RESET is usually left alone.
                 Works with 2.7 to 5.5 Volts.</p>
-            <p>It does not have hardware serial comm, which might be solved with a software based one.
+            <p class="text-justify">It does not have hardware serial comm, which might be solved with a software based one.
                Could be hard coded directly or "SoftwareSerial" library could be used.</p>
-            <p>The micro have 4K storage, meaning it have really short space. The lighter the code, the better.</p>
+            <p class="text-justify">The micro have 4K storage, meaning it have really short space. The lighter the code, the better.</p>
           </p>
           <br>
 
            <h4>Arduino</h4>
-             <p>I will be coding to the Week7 board with Arduino languaje and C to blink the LED on Pin 2.
+             <p class="text-justify">I will be coding to the Week7 board with Arduino languaje and C to blink the LED on Pin 2.
                 To program the micro, an arduino as ISP will be used.</p>
-             <p>Using the Arduino IDE, we load the blink example.
+             <p class="text-justify">Using the Arduino IDE, we load the blink example.
                 From "File" menu >> Examples >> Basics >> Blink.
                 This code needs to be prepared to match the board pinout.</p>
 
-             <p>Week 7 board have it's LED on Pin2, so I need to change the code from LED_BUILTIN to pin 2.
+             <p class="text-justify">Week 7 board have it's LED on Pin2, so I need to change the code from LED_BUILTIN to pin 2.
                 I created a variable to storage the pin number and labeled "ledpin".
                 The last part of the code is the standard blink part which turns light on/off with digitalWrite() function.</p>
                 <br>
                 <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week9/w9_ard_code_p1.png" alt="">
                 <br>
 
-             <p>Now I load it to the board and see the code takes 942 bytes of memory from the 4096 bytes available (22%).</p> 
+             <p class="text-justify">Now I load it to the board and see the code takes 942 bytes of memory from the 4096 bytes available (22%).</p> 
 
                 <br>
             <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week9/w9_arduino_blink_usage.png" alt="">
@@ -148,26 +148,26 @@
 
 
             <h4>C Language</h4>
-              <p>Arduino language is just a variation of C++.
+              <p class="text-justify">Arduino language is just a variation of C++.
                  Programming with C directly is similar but looks weird for someone who does not know about registers.</p>
 
-              <p>Using Arduino IDE, the first part of the code is to set CPU speed.
+              <p class="text-justify">Using Arduino IDE, the first part of the code is to set CPU speed.
                  Attiny45 runs usually at 8MHz, so speed is defined as a whole number.
                  Also it is important to include avr library since we are working with an attiny which is an avr based microcontroller.</p>
                  <br>
              <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week9/w9_c_code_p1.png" alt="">
                 <br>
-              <p>The main function (void function which loops infinitely) contains the code to set all PORTB pins.
+              <p class="text-justify">The main function (void function which loops infinitely) contains the code to set all PORTB pins.
                  PORTB stands as a "group" name for those pins. Attiny45 "PB" pins are physical pin 1 (PB5), 2 (PB3), 3 (PB4), 5 (PB0), 6 (PB1) and 7 (PB2).
                  Physical pins 4 and 8 are for GROUND and VCC.</p>
               <br>
               <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week9/w9_tiny45_pinout_color.jpg" alt="">
               <br>
-              <p>A "For" function with no condition runs the snippet with toggle function for light on/off the LED while delaying 1 second between actions.</p>
+              <p class="text-justify">A "For" function with no condition runs the snippet with toggle function for light on/off the LED while delaying 1 second between actions.</p>
               <br>
               <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week9/w9_c_code_p2.png" alt="">
               <br>
-              <p>Finally when loading the code, an amazing low memory usage shows why using c is efficient.</p>
+              <p class="text-justify">Finally when loading the code, an amazing low memory usage shows why using c is efficient.</p>
               <br>
               <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week9/w9_c_code_space.png" alt="">
               <br>

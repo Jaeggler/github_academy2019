@@ -1,0 +1,217 @@
+<!-- General HTML Data-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FabAcademy - Diego Santa Cruz Meoño</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Style Change for Nav Bar-->
+    <style>
+      .navbar{
+        margin-bottom:0;
+        border-radius:0;
+      }
+
+    </style>
+
+  </head>
+
+      <!--NavBar code-->
+  <body class="container py-5 bg-light" >
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container"><!--This container keeps navbar text in the center-->
+        <a class="navbar-brand" href="index.html">Diego Santa Cruz</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="week1.html">Final Project</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Assignments
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="week1.html">Week1</a>
+                <a class="dropdown-item" href="week2.html">Week2</a>
+                <a class="dropdown-item" href="week3.html">Week3</a>
+                <a class="dropdown-item" href="week4.html">Week4</a>
+                <a class="dropdown-item" href="week5.html">Week5</a>
+                <a class="dropdown-item" href="week6.html">Week6</a>
+                <a class="dropdown-item" href="week7.html">Week7</a>
+                <a class="dropdown-item" href="week8.html">Week8</a>
+                <a class="dropdown-item" href="week9.html">Week9</a>
+                <a class="dropdown-item" href="week10.html">Week10</a>
+                <a class="dropdown-item" href="week11.html">Week11</a>
+                <a class="dropdown-item" href="week12.html">Week12</a>
+                <a class="dropdown-item" href="week13.html">Week13</a>
+                <a class="dropdown-item" href="week14.html">Week14</a>
+                <a class="dropdown-item" href="week15.html">Week15</a>
+                <a class="dropdown-item" href="week16.html">Week16</a>
+                <a class="dropdown-item" href="week17.html">Week17</a>
+                <a class="dropdown-item" href="week18.html">Week18</a>
+                <a class="dropdown-item" href="week19.html">Week19</a>
+                <a class="dropdown-item" href="week20.html">Week20</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+
+  </header>
+
+<!--All content goes here-->
+<main>
+
+  <div class="bg-white py-4 shadow rounded">
+    <div class="container">
+
+
+      <!-- Objectives -->
+      <div class="row px-3 py-3">
+        <div class="col-8">
+          <h1>Interface and Application Programming</h1>
+          <p>
+            <ul>
+              <li>Group: Test runout, alignment, speeds, feeds, and toolpaths for your machine</li>
+              <li>Individual assignment: Measure something. Add a sensor to a microcontroller board that you have designed and read it.</li>
+            </ul>
+          </p>
+        </div>
+        <div class="col-4">
+        </div>
+      </div>
+      <hr>
+
+      <!-- MAIN ROW -->
+      <div class="row px-3">
+
+                <!-- Main Info -->
+        <div class="col-8">
+          <p>
+            <h4>System Idea</h4>
+            <p class="text-justify">The idea behind this week is to connect one board to the computer and send data between seria comm to make one input/output board do something.
+               Data will be send from a python developed interface through serial comm by pyserial.</p>
+              <br>
+                <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week16/w16_interface.png" alt="">
+              <br>
+
+           <h4>Python, Tkinter and Pyserial</h4>
+             <p class="text-justify">Python is a high level programming language for-general purpose programming.
+                For more info about it you can check it <a href="https://www.howtogeek.com/197947/how-to-install-python-on-windows/">wikipedia page.</a>a></p>
+             <p class="text-justify">For tutorial on how installing Python, a very simple articule can be found <a href="https://tkdocs.com/tutorial/install.html">here.</a></p>
+             <p class="text-justify">Tkinter is a package containing all standard GUI (Graphic User Interface) for Python. Normally it comes with Python installation.</p>
+            <p class="text-justify">For serial comm, Pyserial is the prefered library. It allows to connect ny Python to serial communication devices.</p>
+             <p class="text-justify">For how to install and use Pyserial there is a tutorial <a href="http://pyserial.readthedocs.io/en/latest/pyserial.html">here.</a></p>
+              
+            <h4>GUI Design and Code</h4>
+              <p class="text-justify">I will made a simple interface with 2 buttons: One for each LED.</p>
+              <p class="text-justify">First part it's to call tkinter and Pyserial libraries.</p>
+                 <br>
+             <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week16/w16_code_p1.png" alt="">
+                <br>
+              <p class="text-justify">Next part of the code is to open the ports.
+                 One way to test which port going to be needed when the interface starts is to connect a Arduino and check which port is already using.
+                 For this case, "COM6" will be my selected port.</p>
+              <p class="text-justify">Now, we define the button1 and 2 function to write 1 or 2 when press.</p>
+                <br>
+                  <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week16/w16_code_p2.png" alt="">
+                <br>
+              <p class="text-justify">Interface initialize creating the window (TK() function) and defining it's properties.
+                 A canvas need to be placed to hold B1 and B2 buttons, which are labeled with the color their represent.</p>
+              <p class="text-justify">Finally the "root.mainloop" method keeps the program looping.</p>
+               <br>
+                 <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week16/w16_code_p3.png" alt="">
+               <br>
+              <p class="text-justify">Finally the code to the interface will look like this:</p>
+               <br>
+                 <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week16/w16_code_p3.png" alt="">
+               <br>   
+
+            <h4>Microprocessor programming</h4>
+            <p class="text-justify">I will using a Arduino One to test my code first.</p>
+            <p class="text-justify">First part of the code will be variable definition.
+               Then we open serial comm and define output pins (10 and 11).</p>
+              <br>
+                <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week16/w16_code_ard_p1.png" alt="">
+              <br>
+
+            <p class="text-justify">In the loop, conditional if to read incoming data when bytes are available and another 2 conditionals to define which LEDs will light when 1 or 2 are recieved
+               (49 and 50 are typep because those are 1 and 2 on ASCII table).</p>
+              <br>
+                <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week16/w16_code_ard_p2.png" alt="">
+              <br>
+            <p class="text-justify">The whole code looks like this:</p>
+              <br>
+                <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week16/w16_code_ard_p2.png" alt="">
+              <br>
+
+            <h4>Testing with Arduino</h4>
+            <p class="text-justify">After loading code on arduino one board and connect it to the computer, I run the interface and check data its been sent correctly. It works!</p>
+            <p class="text-justify">When 1 is read at the Arduino, red LED will turn ON; when '2', green LED will turn ON and switch red LED off.</p>
+            <p class="text-justify">NOTE: Interface button "blue" was changed to "green", when noticed I did not have a blue LED.</p>
+              <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jM8Ck7AHWGc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <br>
+
+            <h4>OUTPUT board coding</h4>
+            <p class="text-justify">Part of the code from week 12 code was used to make the new one.
+               Just added some code snippet to make the board reads arduino outputs and turn correct light when incoming pins are HIGH (Using arduino as interface with the Python interface).</p>
+              <br>
+                <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week11/w11_code_final.png" alt="">
+              <br>
+            <p class="text-justify">Code for the attiny, its loaded (link at the bottom).
+               When "Red" button at the interface its pressed, HIGH status change at pin9 in Arduino, feeding Pin 2 at output board.</p>
+              <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PpF9EKKITdo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <br>
+        </div>
+
+        <!-- Side Info -->
+        <div class="col-4">
+          <p>
+            <h5>Downloads</h5>
+            <ul>
+              <li> <a href="fabdata\code\week16\week16.rar" download>Code - Week 16 files</a></li>
+            </ul>
+          </p>
+        </div>
+
+      </div>  <!--   Row Closure -->
+
+    </div>  <!--Container Closure -->
+
+</div> <!--Big Div Closure -->
+
+</main>
+
+<!--End of content-->
+
+<!--Footer-->
+<footer class="text-white bg-dark">
+  <p class="text-center">Diego Santa Cruz Meono</p>
+  <p class="text-center">FabAcademy 2019</p>
+</footer>
+<!--End of footer-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="bootstrap\js\jquery-slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+
+</html>

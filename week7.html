@@ -54,7 +54,7 @@
                 <a class="dropdown-item" href="week9.html">Week9</a>
                 <a class="dropdown-item" href="week10.html">Week10</a>
                 <a class="dropdown-item" href="week11.html">Week11</a>
-                <!-- <a class="dropdown-item" href="week12.html">Week12</a>
+                <a class="dropdown-item" href="week12.html">Week12</a>
                 <a class="dropdown-item" href="week13.html">Week13</a>
                 <a class="dropdown-item" href="week14.html">Week14</a>
                 <a class="dropdown-item" href="week15.html">Week15</a>
@@ -62,7 +62,7 @@
                 <a class="dropdown-item" href="week17.html">Week17</a>
                 <a class="dropdown-item" href="week18.html">Week18</a>
                 <a class="dropdown-item" href="week19.html">Week19</a>
-                <a class="dropdown-item" href="week20.html">Week20</a> -->
+                <a class="dropdown-item" href="week20.html">Week20</a>
               </div>
             </li>
           </ul>
@@ -104,9 +104,9 @@
         <div class="col-8">
           <p>
             <h4>Personal Assignment - Understanding the circuit</h4>
-            <p>The "Hello World" circuit is based on a atTiny44 microcontroller which is programmed to print (echo) a given input in serial monitor.
+            <p class="text-justify">The "Hello World" circuit is based on a atTiny44 microcontroller which is programmed to print (echo) a given input in serial monitor.
                It have a 20MHz crystal, FTDI and SPI terminals for serial comm and a 10K resistor and capacitor for micro safety.</p>
-            <p>We need to add a button to the circuit which will turn on/off a LED.
+            <p class="text-justify">We need to add a button to the circuit which will turn on/off a LED.
                This button will be on one of the free I/O pins of the micro and the LED will be on other of the free I/O.</p>
              <br>
           <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week7/w7_echo_world.jpg" alt="">
@@ -115,41 +115,41 @@
           <br>
 
            <h4>Simulation</h4>
-             <p>Using the TinkerCAD electronics simulator (www.tinkercad.com), I'm going to try to reproduce the circuit.
+             <p class="text-justify">Using the TinkerCAD electronics simulator (www.tinkercad.com), I'm going to try to reproduce the circuit.
                 Due this is a very basic -but free- simulator it doesn't have all components, but do have all main components -name attiny45- which is all we need for this week.</p>
                 <br>
              <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week7/w7_tinker_layout.png" alt="">
                 <br>
 
             <h4>Components</h4>
-              <p>Once logged in TinkerCAD, a new circuit needs to be created.
+              <p class="text-justify">Once logged in TinkerCAD, a new circuit needs to be created.
                  Circuits layout allows to drag any component (from TinkerCAD library) to the development area.
                  For this simulation I will be using: breadboard, attiny45 micro, resistor, capacitor, button and LED.</p>
                  <br>
              <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week7/w7_simulation.jpg" alt="">
                 <br>
-              <p>When all components are pseudo placed (I will be moving the components while make connections to better fit), click on one end to place a cable between 2 points.
+              <p class="text-justify">When all components are pseudo placed (I will be moving the components while make connections to better fit), click on one end to place a cable between 2 points.
                  Repeat the steps with all connections needed and should look like the image.</p>
 
 
               <h4>Programming</h4>
-               <p>The code enviroment is similar to the Arduino IDE, and allows to programm the AVR attiny micro with arduino language.
+               <p class="text-justify">The code enviroment is similar to the Arduino IDE, and allows to programm the AVR attiny micro with arduino language.
                   With the code enviroment open, I added the code for a simple push button program. When the button is pushed, the light will be on.</p>
                <br>
             <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week7/w7_sim_prog.png" alt="">
                <br>
-               <p>What's different using atTiny45 from the original atTiny44? None. Should work the same way.
+               <p class="text-justify">What's different using atTiny45 from the original atTiny44? None. Should work the same way.
                   The only difference for this proyect is pin availability. atTiny44 have 6 more pins (14) than tiny45, but for this proyect its enough.</p>
                <br>
                <iframe width="560" height="315" src="https://www.youtube.com/embed/7BAKXm1T9wI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                <br>
 
                <h4>Design Software - Using Eagle</h4>
-                <p>For the PCB design, I will be using Eagle, from Autodesk.
+                <p class="text-justify">For the PCB design, I will be using Eagle, from Autodesk.
                    For how to install and setup Eagle, I used sparkfun guide:<a href="https://learn.sparkfun.com/tutorials/how-to-install-and-setup-eagle">How to install and setp Eagle</a> .
                    It's a very simple guide for programm installation, library setup (library I downloaded from <a href="https://github.com/Academany/FabAcademany-Resources/blob/master/SUMMARY.md">here</a>) and other settings.</p>
 
-                <p>Operation for Eagle is really easy, big steps are:</p>
+                <p class="text-justify">Operation for Eagle is really easy, big steps are:</p>
                 <ul>
                   <li>Creating Proyect: This will be our "Project file".</li>
                   <li>Creating schematics file: Where we connect our components.</li>
@@ -158,7 +158,7 @@
                   <li>Fix errors, improvements and changes.</li>
                   <li>Export: exporting png files for PCB milling.</li>
                 </ul>
-                  <p>All steps are described in these <a href="https://learn.sparkfun.com/tutorials/using-eagle-schematic">schematic</a>
+                  <p class="text-justify">All steps are described in these <a href="https://learn.sparkfun.com/tutorials/using-eagle-schematic">schematic</a>
                      and <a href="https://learn.sparkfun.com/tutorials/using-eagle-board-layout">boards</a> tutorials.
                      I will be detailing all things specific for my assignment.</p>
                      <br>
@@ -166,7 +166,7 @@
                      <br>
 
                <h4>Re-draw board</h4>
-                <p>The first big change I'm doing is replace attiny44 with a 45 unit.
+                <p class="text-justify">The first big change I'm doing is replace attiny44 with a 45 unit.
                    This because I'm not adding the 20M crystal and FTDI header(used for serial comm), releasing 4 pins in total (44 has 6 more I/O than 45).
                    I have to add a LED and button, so the final component list is:</p>
                 <ul>
@@ -177,7 +177,7 @@
                      <li>Button</li>
                      <li>Surface mount LED</li>
                 </ul>
-                <p>Added components to schematic file. Made a first try, but seems too ugly, so decided to take 3x2 header out amd connect with labels.
+                <p class="text-justify">Added components to schematic file. Made a first try, but seems too ugly, so decided to take 3x2 header out amd connect with labels.
                    It doesn't matter if it is connected this way, the programm identify when you are connect similar labels.
                     Once all components are connected, we switch to board layout.</p>
                     <br>
@@ -185,64 +185,64 @@
                     <br>
                  <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week7/w7_sch_v2.jpg" alt="">
                     <br>
-                <p>Here, every component appears packed. Using the move command, I re-arrenged the components trying to identify the final distribution.
+                <p class="text-justify">Here, every component appears packed. Using the move command, I re-arrenged the components trying to identify the final distribution.
                    Once I have some idea where is the final place of each component, make board delimitation.
                    Trying to make everything smaller is preffered, it reduce milling time and material, making everything cheaper.</p>
                    <br>
                 <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week7/w7_pcb_arrenge.jpg" alt="">
                    <br>
-                 <p>Using this first iteration, tried routing components. Eagle have it's own autorouting feature, but for this job wanted to do by myself.</p>
-                 <p>Routing it's not one way task, most of the time you are making iteration to achieve the best results.
+                 <p class="text-justify">Using this first iteration, tried routing components. Eagle have it's own autorouting feature, but for this job wanted to do by myself.</p>
+                 <p class="text-justify">Routing it's not one way task, most of the time you are making iteration to achieve the best results.
                     If a connection is wrong or is missing, you have to go back to the schematics and fix it.</p>
                     <br>
                 <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week7/w7_final_pcb.jpg" alt="">
                    <br>
                <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week7/w7_final_pcb_v2.jpg" alt="">
                   <br>
-                <p>Finally when all routes are in place, its time to export to a PNG graphic. Here we have a Modela CNC with Fab Module.
+                <p class="text-justify">Finally when all routes are in place, its time to export to a PNG graphic. Here we have a Modela CNC with Fab Module.
                    Export only the top layer without colors (Monochrome) and good resolution (1000 DPI aprox).</p>
                    <br>
                 <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week7/w7_export_board.png" alt="">
                    <br>
 
                <h4>Milling and Soldering</h4>
-                <p>Like week5 assignment, I will be using FabModules. To check how to set up the modela printer visit week 5.</p>
-                <p>After setting all parameters, first run will cut through the board 0.08" deep.
+                <p class="text-justify">Like week5 assignment, I will be using FabModules. To check how to set up the modela printer visit week 5.</p>
+                <p class="text-justify">After setting all parameters, first run will cut through the board 0.08" deep.
                    This will be repeated 2-3 times depending how quality the job is. NOTE: This is only because we have a broken tool.</p>
                <br>
              <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week7/w7_mill_data.png" alt="">
                 <br>
-               <p>After 3 times, the board is ready, but need to be cut using the guillotine.
+               <p class="text-justify">After 3 times, the board is ready, but need to be cut using the guillotine.
                   Now the board is ready for soldering it's components.</p>
                 <br>
              <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week7/w7_mill_result.png" alt="">
                 <br>
-                <p>Voilá: this is how it looks after soldering it's componets.</p>
+                <p class="text-justify">Voilá: this is how it looks after soldering it's componets.</p>
                 <br>
              <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week7/w7_solder_final.png" alt="">
                 <br>
-                <p>Using a digital multimeter, cheked the board is ok!</p>
+                <p class="text-justify">Using a digital multimeter, cheked the board is ok!</p>
 
                 <h4>Programming and test</h4>
-                <p>One thing I was noticed, is FabISP and AVRISP programmer do not supply 5v to the board, should be powered from outside! That was unexpected, since I removed FTDI connector.
+                <p class="text-justify">One thing I was noticed, is FabISP and AVRISP programmer do not supply 5v to the board, should be powered from outside! That was unexpected, since I removed FTDI connector.
                    So decided to solder two cables to the board (Vcc and GND) to be powered.</p>
                  <br>
               <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week7/w7_fixing.jpg" alt="">
                  <br>
-               <p>Before programming, a need change the input pin number in the new code.
+               <p class="text-justify">Before programming, a need change the input pin number in the new code.
                   Simulation uses PB5 for button imput but the new board would be using PB3.
                   Only making change on "buttonpin" variable will solve the problem.</p>
-              <p>For this assingment I used an Arduino One as an ISP programmer.
+              <p class="text-justify">For this assingment I used an Arduino One as an ISP programmer.
                  This <a href="https://www.youtube.com/watch?v=8SOUgyHXVG0">video</a> shows how to setup your Arduino One as a programmer.</p>
                  <br>
               <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week7/w7_pinout.png" alt="">
                  <br>
-               <p>I connected everything as shown in the video, and one thing I learnt is the arduino can be an ISP and CAN supply 5v to the board, so my first "fix" was unnecesary.</p>
-               <p>Now I will copy the code from Tinkercad to Arduino IDE.
+               <p class="text-justify">I connected everything as shown in the video, and one thing I learnt is the arduino can be an ISP and CAN supply 5v to the board, so my first "fix" was unnecesary.</p>
+               <p class="text-justify">Now I will copy the code from Tinkercad to Arduino IDE.
                   For the Arduino to send info to the attiny, first we need to load the attiny library.
                   <a href="https://create.arduino.cc/projecthub/arjun/programming-attiny85-with-arduino-uno-afb829">Here</a> is a tutorial how to add attiny library to Arduino IDE.</p>
-              <p>With everything connected, loaded the program from Tinkercad (files at the bottom) to Arduino IDE, and program show "Done uploading", a confirmation of success.</p>
-              <p>Disconected all but VCC and ground an test (LED should turn on when button press). Sucess!</p>
+              <p class="text-justify">With everything connected, loaded the program from Tinkercad (files at the bottom) to Arduino IDE, and program show "Done uploading", a confirmation of success.</p>
+              <p class="text-justify">Disconected all but VCC and ground an test (LED should turn on when button press). Sucess!</p>
               <br>
            <iframe width="560" height="315" src="https://www.youtube.com/embed/dOPnPUfhEAI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <br>

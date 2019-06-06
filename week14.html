@@ -82,11 +82,11 @@
       <!-- Objectives -->
       <div class="row px-3 py-3">
         <div class="col-8">
-          <h1>Molding and Casting</h1>
+          <h1>Networking and Communication</h1>
           <p>
             <ul>
-              <li>Group - Review the safety data sheets for each of your molding and casting materials, then make and compare test casts with each of them.</li>
-              <li>Individual assignment: Design a 3D mould around the stock and tooling that you'll be using, machine it, and use it to cast parts.</li>
+              <li>Group: Test runout, alignment, speeds, feeds, and toolpaths for your machine</li>
+              <li>Individual assignment: Design and build a wired ^/or wireless network connecting at leats two processor</li>
             </ul>
           </p>
         </div>
@@ -101,54 +101,56 @@
                 <!-- Main Info -->
         <div class="col-8">
           <p>
-            <h4>Model Design</h4>
-            <p class="text-justify">For this assignment I will be designing a little mold for chocolate cast.
-               I will be creating a mold for a Mario Bros cube.</p>
-            <p class="text-justify">Using autodesk Fusion I will create the mold.
-              On the left is the video for the creation.</p>
-               <br>
-               <iframe width="560" height="315" src="https://www.youtube.com/embed/3oxIajP7gjk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               <br>
-          </p>
-          <br>
+            <h4>Design Network</h4>
+            <p class="text-justify">I will be using 2 boards from previous weeks to send data and turn a led in the other one.
+               Board from week 11 (Input) will send either 1 or 0 and the other board will turned on/off depending of the value.</p>
+            <p class="text-justify">The code will make the board to turn both LEDs at different times when button is pushed.</p>
 
-          <h4>Mold Machinning</h4>
-          <p class="text-justify">A will be using a Roland machine for milling my mould.
-             I will be using flexible wax. Set all parameters waited.</p>
-          <p class="text-justify">Flexibe wax wasn't the best material for this, since can be damage easily, but was the only material available.
-             With extra care still a usefull choice.</p>
-             <br>
-             <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week10/w10_milling.jpg" alt="">
-             <br>
-             <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week10/w10_milling_result.jpg" alt="">
-             <br>
+            <h4>Coding</h4>
+            <p class="text-justify">First I will code the OUTPUT. Attiny45 do not have hardware serial comm, instead software based will be used.
+                SoftwareSerial library allows tiny and arduino boards to create extra serial pins so, we are adding to the code.</p>
+              <br>
+                <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week14/w14_code_out_p1.png" alt="">
+              <br>
+            <p class="text-justify">Defining some variables and creating the SoftwareSerial object which will be called "softserial". This object need the values for virtual Rx and Tx.</p>
+              <br>
+                <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week14/w14_code_out_p2.png" alt="">
+              <br>
+            <p class="text-justify">In "setup" function, "softserial" starts with the begin method and some ports are defined as input/output.</p>  
+              <br>
+                <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week14/w14_code_out_p3.png" alt="">
+              <br>
+            <p class="text-justify">Finally the "loop" code is added. Here a LED is turned on/off for debugging purpose and 0 and 1 bytes are sent through Tx pin.</p>
+              <br>
+                <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week14/w14_code_out_p4.png" alt="">
+              <br>
+            <p class="text-justify">In the end the code seems like this:</p>
+              <br>
+                <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week14/w14_code_out.png" alt="">
+              <br>
 
-           <h4>Mold Cast</h4>
-             <p class="text-justify">Since it is intended to be a food mould, I selected "food grade" material.
-                It's a bi-component with a mixing ratio of 1:1.</p>
-             <p class="text-justify">Used a scaled coup and added 80cc of each material. MIxed for about 5 min.
-                Poured and left near a window to solid. Material data details that will harden faster with heat.
-                Now it's really cold with high humidity, so will leave it overnight to make sure will solid completely.</p>
-             <p class="text-justify">After all night, the mold looks great.</p>
+            <h4>Coding the input</h4>
+              <p class="text-justify">Including librar, variables and opening the serial comm it's similar.</p>
                 <br>
-                <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week10/w10_material.png" alt="">
+                  <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week14/w14_code_in_p1.png" alt="">
                 <br>
-                <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week10/w10_mold_cast.jpg" alt="">
+              <p class="text-justify">In "loop" thing changes because now it is reading data.</p>
                 <br>
-                <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week10/w10_demoulding.jpg" alt="">
+                  <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week14/w14_code_in_p2.png" alt="">
                 <br>
-
-            <h4>Casting</h4>
-              <p class="text-justify">And now we have the mold ready to use with the design we choose.</p>
-              <p class="text-justify">First, we prepare the chocolate by melting it.
-                 Then, we pour it into the mold beeing carefull to fullfil every space of the mold.
-                 And we take it to the fridge. We leave it there approximately 30 minutes.
-                 And finally we take it out and have a great chocolate to enjoy!</p>
-                 <br>
-             <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week10/w10_pouring.jpg" alt="">
+              <p class="text-justify">Finally the code looks like this:</p>
                 <br>
-                <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week10/w10_result.jpg" alt="">
+                  <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week14/w14_code_in.png" alt="">
                 <br>
+          
+            <h4>Testing</h4>
+            <p class="text-justify">Using an arduino board for power feeding, I connect it to the output board and from it, serial connect the other board.
+               Video show data send from one and the other recieving.</p>
+            <p class="text-justify">Create project, schematics and add all components to it. This time, I tried to make less "physical" connections but more labeled ones.
+               Once all is connected, we start board design.</p>
+              <br>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/3WBjUYxYKJg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <br>
 
         </div>
 
@@ -157,7 +159,7 @@
           <p>
             <h5>Downloads</h5>
             <ul>
-              <li> <a href="fabdata\files\week10\week10.rar" download>Week 10 files</a></li>
+              <li> <a href="fabdata\code\week14\week14.rar" download>Code - Week 14 files</a></li>
             </ul>
           </p>
         </div>
