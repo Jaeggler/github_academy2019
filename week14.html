@@ -43,26 +43,26 @@
                 Assignments
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="week1.html">Week1</a>
-                <a class="dropdown-item" href="week2.html">Week2</a>
-                <a class="dropdown-item" href="week3.html">Week3</a>
-                <a class="dropdown-item" href="week4.html">Week4</a>
-                <a class="dropdown-item" href="week5.html">Week5</a>
-                <a class="dropdown-item" href="week6.html">Week6</a>
-                <a class="dropdown-item" href="week7.html">Week7</a>
-                <a class="dropdown-item" href="week8.html">Week8</a>
-                <a class="dropdown-item" href="week9.html">Week9</a>
-                <a class="dropdown-item" href="week10.html">Week10</a>
-                <a class="dropdown-item" href="week11.html">Week11</a>
-                <a class="dropdown-item" href="week12.html">Week12</a>
-                <a class="dropdown-item" href="week13.html">Week13</a>
-                <a class="dropdown-item" href="week14.html">Week14</a>
-                <a class="dropdown-item" href="week15.html">Week15</a>
-                <a class="dropdown-item" href="week16.html">Week16</a>
-                <a class="dropdown-item" href="week17.html">Week17</a>
-                <a class="dropdown-item" href="week18.html">Week18</a>
-                <a class="dropdown-item" href="week19.html">Week19</a>
-                <a class="dropdown-item" href="week20.html">Week20</a>
+                  <a class="dropdown-item" href="week1.html">Week1 - Principles and Practices</a>
+                  <a class="dropdown-item" href="week2.html">Week2 - Project Management</a>
+                  <a class="dropdown-item" href="week3.html">Week3 - Computer-Aided Design</a>
+                  <a class="dropdown-item" href="week4.html">Week4 - Computer-Controlled Cutting</a>
+                  <a class="dropdown-item" href="week5.html">Week5 - Electronics Production</a>
+                  <a class="dropdown-item" href="week6.html">Week6 - 3D Scanning and Printing</a>
+                  <a class="dropdown-item" href="week7.html">Week7 - Electronics Design</a>
+                  <a class="dropdown-item" href="week8.html">Week8 - Computer-Controlled Machinning</a>
+                  <a class="dropdown-item" href="week9.html">Week9 - Embedded Programming</a>
+                  <a class="dropdown-item" href="week10.html">Week10 - Molding and Casting</a>
+                  <a class="dropdown-item" href="week11.html">Week11 - Input Devices</a>
+                  <a class="dropdown-item" href="week12.html">Week12 - Output Devices</a>
+                  <a class="dropdown-item" href="week13.html">Week13 - Applications and Implications</a>
+                  <a class="dropdown-item" href="week14.html">Week14 - Networking and Comm</a>
+                  <a class="dropdown-item" href="week15.html">Week15 - Mechanical Design</a>
+                  <a class="dropdown-item" href="week16.html">Week16 - Interface and Application Programming</a>
+                  <a class="dropdown-item" href="week17.html">Week17 - Machine Design</a>
+                  <a class="dropdown-item" href="week18.html">Week18 - Wildcard Week</a>
+                  <a class="dropdown-item" href="week19.html">Week19 - Invention, Intellectual Property</a>
+                  <a class="dropdown-item" href="week20.html">Week20 - Final Project</a>
               </div>
             </li>
           </ul>
@@ -85,9 +85,8 @@
           <h1>Networking and Communication</h1>
           <p>
             <ul>
-              <li>Group: Send a message between two projects</li>
-              <li>Individual assignment: Design, build, and connect wired or wireless node(s)
-                  with network or bus addresses</li>
+              <li>Group: Send a message between two projects (assignments made by different students.</li>
+              <li>Individual assignment: Design, build, and connect wired or wireless node(s) with network or bus addresses</li>
             </ul>
           </p>
         </div>
@@ -101,54 +100,93 @@
 
                 <!-- Main Info -->
         <div class="col-8">
-          <p>
-            <h4>Design Network</h4>
-            <p class="text-justify">I will be using 2 boards from previous weeks to send data and turn a led in the other one.
-               Board from week 11 (Input) will send either 1 or 0 and the other board will turned on/off depending of the value.</p>
-            <p class="text-justify">The code will make the board to turn both LEDs at different times when button is pushed.</p>
+        <!-- <h4>Group Assigment - Networking</h4>
+            <p class="text-justify">
+                Students</p>
+            <ul>
+                <li>Silvia Lugo</li>
+                <li>Carlos Nina</li>
+                <li>Ivan Callupe</li>
+                <li>Diego Santa Cruz</li>
+            </ul>
+            <p class="text-justify">
+                For this assigment 4 boards will be used to comunicate.</p> -->
 
-            <h4>Coding</h4>
-            <p class="text-justify">First I will code the OUTPUT. Attiny45 do not have hardware serial comm, instead software based will be used.
+        <h4>Design Network</h4>
+            <p class="text-justify">
+                I will be using 2 boards from previous weeks to send data and turn a led in the other one.
+                Board from week 11 (Input) will send either 1 or 0 and the other board will turned on/off depending of the value.</p>
+            <p class="text-justify">
+                The code will make the board to turn both LEDs at different times when button is pushed.</p>
+
+        <h4>Coding</h4>
+            <p class="text-justify">
+                First I will code the OUTPUT. Attiny45 do not have hardware serial comm, instead software based will be used.
                 SoftwareSerial library allows tiny and arduino boards to create extra serial pins so, we are adding to the code.</p>
+
               <br>
                 <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week14/w14_code_out_p1.png" alt="">
               <br>
-            <p class="text-justify">Defining some variables and creating the SoftwareSerial object which will be called "softserial". This object need the values for virtual Rx and Tx.</p>
+
+            <p class="text-justify">
+                Defining some variables and creating the SoftwareSerial object which will be called "softserial".
+                This object need the values for virtual Rx and Tx.</p>
+
               <br>
                 <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week14/w14_code_out_p2.png" alt="">
               <br>
-            <p class="text-justify">In "setup" function, "softserial" starts with the begin method and some ports are defined as input/output.</p>  
+
+            <p class="text-justify">
+                In "setup" function, "softserial" starts with the begin method and some ports are defined as input/output.</p> 
+
               <br>
                 <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week14/w14_code_out_p3.png" alt="">
               <br>
-            <p class="text-justify">Finally the "loop" code is added. Here a LED is turned on/off for debugging purpose and 0 and 1 bytes are sent through Tx pin.</p>
+
+            <p class="text-justify">
+                Finally the "loop" code is added. Here a LED is turned on/off for debugging purpose and 0 and 1 bytes are sent through Tx pin.</p>
+
               <br>
                 <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week14/w14_code_out_p4.png" alt="">
               <br>
-            <p class="text-justify">In the end the code seems like this:</p>
+
+            <p class="text-justify">
+                In the end the code seems like this:</p>
+
               <br>
                 <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week14/w14_code_out.png" alt="">
               <br>
 
             <h4>Coding the input</h4>
-              <p class="text-justify">Including librar, variables and opening the serial comm it's similar.</p>
-                <br>
+              <p class="text-justify">
+                Including librar, variables and opening the serial comm it's similar.</p>
+
+              <br>
                   <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week14/w14_code_in_p1.png" alt="">
-                <br>
-              <p class="text-justify">In "loop" thing changes because now it is reading data.</p>
-                <br>
+              <br>
+
+              <p class="text-justify">
+                  In "loop" thing changes because now it is reading data.</p>
+
+              <br>
                   <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week14/w14_code_in_p2.png" alt="">
-                <br>
-              <p class="text-justify">Finally the code looks like this:</p>
-                <br>
+              <br>
+
+              <p class="text-justify">
+                Finally the code looks like this:</p>
+
+              <br>
                   <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week14/w14_code_in.png" alt="">
-                <br>
+              <br>
           
-            <h4>Testing</h4>
-            <p class="text-justify">Using an arduino board for power feeding, I connect it to the output board and from it, serial connect the other board.
-               Video show data send from one and the other recieving.</p>
-            <p class="text-justify">Create project, schematics and add all components to it. This time, I tried to make less "physical" connections but more labeled ones.
-               Once all is connected, we start board design.</p>
+        <h4>Testing</h4>
+            <p class="text-justify">
+                Using an arduino board for power feeding, I connect it to the output board and from it, serial connect the other board.
+                Video show data send from one and the other recieving.</p>
+            <p class="text-justify">
+                Create project, schematics and add all components to it. This time, I tried to make less "physical" connections but more labeled ones.
+                Once all is connected, we start board design.</p>
+
               <br>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/3WBjUYxYKJg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <br>

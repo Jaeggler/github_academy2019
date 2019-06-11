@@ -16,12 +16,13 @@
         margin-bottom:0;
         border-radius:0;
       }
+
     </style>
 
   </head>
 
       <!--NavBar code-->
-  <body>
+  <body class="container py-5 bg-light" >
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container"><!--This container keeps navbar text in the center-->
@@ -42,26 +43,26 @@
                 Assignments
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="week1.html">Week1</a>
-                <a class="dropdown-item" href="week2.html">Week2</a>
-                <a class="dropdown-item" href="week3.html">Week3</a>
-                <a class="dropdown-item" href="week4.html">Week4</a>
-                <a class="dropdown-item" href="week5.html">Week5</a>
-                <a class="dropdown-item" href="week6.html">Week6</a>
-                <a class="dropdown-item" href="week7.html">Week7</a>
-                <a class="dropdown-item" href="week8.html">Week8</a>
-                <a class="dropdown-item" href="week9.html">Week9</a>
-                <a class="dropdown-item" href="week10.html">Week10</a>
-                <a class="dropdown-item" href="week11.html">Week11</a>
-                <a class="dropdown-item" href="week12.html">Week12</a>
-                <a class="dropdown-item" href="week13.html">Week13</a>
-                <a class="dropdown-item" href="week14.html">Week14</a>
-                <a class="dropdown-item" href="week15.html">Week15</a>
-                <a class="dropdown-item" href="week16.html">Week16</a>
-                <a class="dropdown-item" href="week17.html">Week17</a>
-                <a class="dropdown-item" href="week18.html">Week18</a>
-                <a class="dropdown-item" href="week19.html">Week19</a>
-                <a class="dropdown-item" href="week20.html">Week20</a>
+                  <a class="dropdown-item" href="week1.html">Week1 - Principles and Practices</a>
+                  <a class="dropdown-item" href="week2.html">Week2 - Project Management</a>
+                  <a class="dropdown-item" href="week3.html">Week3 - Computer-Aided Design</a>
+                  <a class="dropdown-item" href="week4.html">Week4 - Computer-Controlled Cutting</a>
+                  <a class="dropdown-item" href="week5.html">Week5 - Electronics Production</a>
+                  <a class="dropdown-item" href="week6.html">Week6 - 3D Scanning and Printing</a>
+                  <a class="dropdown-item" href="week7.html">Week7 - Electronics Design</a>
+                  <a class="dropdown-item" href="week8.html">Week8 - Computer-Controlled Machinning</a>
+                  <a class="dropdown-item" href="week9.html">Week9 - Embedded Programming</a>
+                  <a class="dropdown-item" href="week10.html">Week10 - Molding and Casting</a>
+                  <a class="dropdown-item" href="week11.html">Week11 - Input Devices</a>
+                  <a class="dropdown-item" href="week12.html">Week12 - Output Devices</a>
+                  <a class="dropdown-item" href="week13.html">Week13 - Applications and Implications</a>
+                  <a class="dropdown-item" href="week14.html">Week14 - Networking and Comm</a>
+                  <a class="dropdown-item" href="week15.html">Week15 - Mechanical Design</a>
+                  <a class="dropdown-item" href="week16.html">Week16 - Interface and Application Programming</a>
+                  <a class="dropdown-item" href="week17.html">Week17 - Machine Design</a>
+                  <a class="dropdown-item" href="week18.html">Week18 - Wildcard Week</a>
+                  <a class="dropdown-item" href="week19.html">Week19 - Invention, Intellectual Property</a>
+                  <a class="dropdown-item" href="week20.html">Week20 - Final Project</a>
               </div>
             </li>
           </ul>
@@ -73,113 +74,201 @@
 
 <!--All content goes here-->
 <main>
-  <div class="bg-light py-4">
+
+  <div class="bg-white py-4 shadow rounded">
     <div class="container">
-        <h2>CAD Design</h2>
-          <p>For this week I want to 3D Print a card holder for my TCG cards.
-             I will be using Autodesk Fusion 360 and Affinity Designer (vector designer) for 3D modeling and logo designing, and 3D print with a Zortrax M200 printer.</p>
-          <p>Also I will be 3d modeling my final project concept.</p>
-          <br>
-        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_deckvault_open.png" alt="Card Holder">
-          <hr>
-        <h2>3D Design</h2>
-          <p>My "Deck Vault" will have 3 components: the body (largest part), top vault and top.
-           The body will held my deck and the top vault will be used to put dices or any other game utility.
-           Using Fusion I create 3 componentes, turning my part file into an assembly.</p>
-        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_components.png" alt="Component tree">
-          <br>
-          <p>First I will design the body. Similar to Inventor, Fusion 360 starts with a sketch <img src="fabdata/images/week3/w3_sketch_button.png" alt="Sketch button">.
-          Using the rectangular tool <img src="fabdata/images/week3/w3_rect_button.png" alt="Rectangular tool"> on Fusion I drew a "center rectangle", a rectangle with 2 points: the center and the diagonal.</p>
-          <br>
-        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_body_sketch.png" alt="Body sketch">
-          <br>
-          <p>Dimensions for this part will be: 70 mm wide, 55 mm large and 1.5 mm width for wall (3d printer minimal requirement).
-          Extrusion will give the design 115 mm height.</p>
-          <br>
-        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_height_extrude.png" alt="Body extrude">
-          <br>
-          <p>With base part completed, sharp edges will be smoothed with a 1.5 mm fillet on inner and outter edges.</p>
-          <p>Second piece is the top compartment (upper).
-          Same procedure as body: Rectangle tool on sketch (dimension will be 54.5x69.5mm and 1.5 width wall) and extrusion for basic form (21mm height and additional 1.5 mm for base).
-          Same fillet radius for sharp edges.</p>
-          <br>
-        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_upper_sketch.png" alt="Upper sketch">
-          <br>
-        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_upper_hgt_extrude.png" alt="Upper extrude">
-          <br>
-          <p>The "crown" feature (serving as hard stop and avoiding the upper component to fall), is added on the top face of the component.
-          This part will have a gap for top insertion.
-          To avoid problems with haging parts, I will be using a triangular shape which is deducted from the front face (using extrude operation as cut).</p>
-          <br>
-        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_upper_slide.png" alt="Upper slide">
-          <br>
-          <p>Finally the top will be rectangular with a triangular feature for easy open. Picture on left shows how looks.</p>
-          <br>
-        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_close.png" alt="Lid">
-          <br>
-          <hr>
-        <h2>2D Design</h2>
-          <p>Using Affinity Designer - a vector desginer - I will add a logo to the deck vault.
-          Fusion uses SVG *Scalable Vector Graphics) format, so I will need to export my file into that format.</p>
-          <p>Using an image as a base, I use the pen tool <img src="fabdata/images/week3/w3_pen_tool.png" alt="Pen tool"> to create the vector image. The pen tool allows to draw a line and then modify it freely.
-           With that, I can draw the contour for extrusion on Fusion.</p>
-          <br>
-        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_pen_mod.png" alt="Model edit with pen">
-          <br>
-        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_mtg_pen.png" alt="Final edit pen">
-          <br>
-          <p>Once the contour is finished, Affinity allows to export to SVG directly.</p>
-          <br>
-        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_mtg_export.png" alt="Export window">
-          <br>
-          <p>Once exported, I return to Fusion o insert it on my 3D.</p>
-          <br>
-        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_mtg_logo.png" alt="Final logo">
-          <br>
-          <p>Once again in Fusion, I create a sketch, add the image, rescale it.
-          Thanks to the SVG format, the file will scale nicely without losing resolution.</p>
-          <br>
-        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_mtg_insert.png" alt="Insert on fusion">
-          <br>
-          <p>Once the image is well placed, the extrusion is made.
-          To make the extrusion better fit for 3D Print, an small fillet (0.8mm) is used.
-          Now the the solid is ready for 3D print on next assingment.</p>
-          <br>
-        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_mtg_final.png" alt="Final Model">
-          <br>
-          <hr>
-        <h2>Project modeling</h2>
-        <p>Using Fusion 360 I modeled my Card Reader.
-           It is a 3 part assambly with a load bay, where cards rest before getting scan; a central bay where a hanging camera will get card name; and a unload bay, which will hold all cards already checked.
-           Each component is modeled on a separeted file and join together on a general assembly file (GA_CardReader on the image below).</p>
-        <p>For this modeling, general considerations where taken:</p>
-        <ul>
-          <li>General card dimension was set as 65x90 mm (real card dimension are 63x88 mm).</li>
-          <li>All "walls" should be 3 mm to consider 3mm MDF material when laser cutting.</li>
-        </ul>
-          <p>When operating, the cards should move from the load bay(red face component) to the camera (component with 2 green cards representing electronics).
-          The mechanical system to card movement between modules is not clear, thats why are not modeled yet.
-          Finally the cards are moved again to the final repository (blue face component).</p>
-          <p>One of the main problems to take care in this project is the mechanical aparatus to make cards move. The load bay first issue is to make cards available on top to move
-          to the next area. A spring is my first idea with servos connected to a Arduino board (or FABduino) as operators.</p>
-        <br>
-        <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_finalp.png" alt="Final project model">
-        <br>
-        <p>Finally the files are here:</p>
-        <ul>
-          <li><a href="fabdata/files/week3/week3.rar">This week projects</a></li>
-          <li><a href="fabdata/files/week3/w3_vault.rar">Card holder</a></li>
-          <li><a href="fabdata/files/week3/w3_svgfiles.rar">SVG files</a></li>
-          <li><a href="fabdata/files/week3/w3_finalp.rar">Final project model</a></li>
-        </ul>
-    </div>
-  </div>
+
+
+      <!-- Objectives -->
+      <div class="row px-3 py-3">
+        <div class="col-8">
+          <h1>Computer-Aided Design</h1>
+            <ul>
+              <li>Individual assignment: Plan and sketch a potential final project.</li>
+            </ul>
+        </div>
+        <div class="col-4">
+        </div>
+      </div>
+      <hr>
+
+      <!-- MAIN ROW -->
+      <div class="row px-3">
+
+                <!-- Main Info -->
+        <div class="col-8">
+          <p>
+            <h4>CAD Design</h4>
+                <p class="text-justify">
+                   For this week I want to 3D Print a card holder for my TCG cards.
+                   I will be using Autodesk Fusion 360 and Affinity Designer (vector designer) for 3D modeling and logo designing, and 3D print with a Zortrax M200 printer.</p>
+                <p class="text-justify">
+                   Also I will be 3d modeling my final project concept.</p>
+              
+                <br>
+                    <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_deckvault_open.png" alt="Card Holder">
+                <br>
+
+            <h4>3D Design</h4>
+                <p class="text-justify">
+                   My "Deck Vault" will have 3 components: the body (largest part), top vault and top.
+                   The body will held my deck and the top vault will be used to put dices or any other game utility.
+                   Using Fusion I create 3 componentes, turning my part file into an assembly.</p>
+            
+                <br>
+                    <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_components.png" alt="Component tree">
+                <br>
+
+                <p class="text-justify">
+                   First I will design the body. Similar to Inventor, Fusion 360 starts with a sketch <img src="fabdata/images/week3/w3_sketch_button.png" alt="Sketch button">.
+                   Using the rectangular tool <img src="fabdata/images/week3/w3_rect_button.png" alt="Rectangular tool"> on Fusion I drew a "center rectangle",
+                   a rectangle with 2 points: the center and the diagonal.</p>
+
+                <br>
+                    <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_body_sketch.png" alt="Body sketch">
+                <br>
+
+                <p class="text-justify">
+                   Dimensions for this part will be: 70 mm wide, 55 mm large and 1.5 mm width for wall (3d printer minimal requirement).
+                   Extrusion will give the design 115 mm height.</p>
+
+                <br>
+                    <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_height_extrude.png" alt="Body extrude">
+                <br>
+
+                <p class="text-justify">
+                   With base part completed, sharp edges will be smoothed with a 1.5 mm fillet on inner and outter edges.</p>
+                <p class="text-justify">
+                   Second piece is the top compartment (upper).
+                   Same procedure as body: Rectangle tool on sketch (dimension will be 54.5x69.5mm and 1.5 width wall) and extrusion for basic form (21mm height and additional 1.5 mm for base).
+                   Same fillet radius for sharp edges.</p>
+
+                <br>
+                    <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_upper_sketch.png" alt="Upper sketch">
+                <br>
+                    <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_upper_hgt_extrude.png" alt="Upper extrude">
+                <br>
+
+                <p class="text-justify">
+                   The "crown" feature (serving as hard stop and avoiding the upper component to fall), is added on the top face of the component.
+                   This part will have a gap for top insertion.
+                   To avoid problems with haging parts, I will be using a triangular shape which is deducted from the front face (using extrude operation as cut).</p>
+
+                <br>
+                    <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_upper_slide.png" alt="Upper slide">
+                <br>
+
+                <p class="text-justify">
+                   Finally the top will be rectangular with a triangular feature for easy open. Picture on left shows how looks.</p>
+
+                <br>
+                    <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_close.png" alt="Lid">
+                <br>
+
+                <hr>
+
+            <h4>2D Design</h4>
+                <p class="text-justify">
+                   Using Affinity Designer - a vector desginer - I will add a logo to the deck vault.
+                   Fusion uses SVG *Scalable Vector Graphics) format, so I will need to export my file into that format.</p>
+                <p class="text-justify">
+                   Using an image as a base, I use the pen tool <img src="fabdata/images/week3/w3_pen_tool.png" alt="Pen tool"> to create the vector image.
+                   The pen tool allows to draw a line and then modify it freely.
+                   With that, I can draw the contour for extrusion on Fusion.</p>
+              
+               <br>
+                   <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_pen_mod.png" alt="Model edit with pen">
+               <br>
+                   <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_mtg_pen.png" alt="Final edit pen">
+               <br>
+
+               <p class="text-justify">
+                  Once the contour is finished, Affinity allows to export to SVG directly.</p>
+
+              <br>
+                  <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_mtg_export.png" alt="Export window">
+              <br>
+
+              <p class="text-justify">
+                 Once exported, I return to Fusion o insert it on my 3D.</p>
+
+              <br>
+                  <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_mtg_logo.png" alt="Final logo">
+              <br>
+
+              <p class="text-justify">
+                  Once again in Fusion, I create a sketch, add the image, rescale it.
+                  Thanks to the SVG format, the file will scale nicely without losing resolution.</p>
+ 
+              <br>
+                  <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_mtg_insert.png" alt="Insert on fusion">
+              <br>
+
+              <p class="text-justify">
+                 Once the image is well placed, the extrusion is made.
+                 To make the extrusion better fit for 3D Print, an small fillet (0.8mm) is used.
+                 Now the the solid is ready for 3D print on next assingment.</p>
+ 
+              <br>
+                  <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_mtg_final.png" alt="Final Model">
+              <br>
+
+              <hr>
+
+          <h4>Project Modeling</h4>
+              <p class="text-justify">
+                 Using Fusion 360 I modeled my Card Reader.
+                 It is a 3 part assambly with a load bay, where cards rest before getting scan;
+                 a central bay where a hanging camera will get card name;
+                 and a unload bay, which will hold all cards already checked.
+                 Each component is modeled on a separeted file and join together on a general assembly file (GA_CardReader on the image below).</p>
+              <p class="text-justify">
+                 For this modeling, general considerations where taken:</p>
+              <ul>
+                <li>General card dimension was set as 65x90 mm (real card dimension are 63x88 mm).</li>
+                <li>All "walls" should be 3 mm to consider 3mm MDF material when laser cutting.</li>
+              </ul>
+              <p class="text-justify">
+                 When operating, the cards should move from the load bay(red face component) to the camera (component with 2 green cards representing electronics).
+                 The mechanical system to card movement between modules is not clear, thats why are not modeled yet.
+                 Finally the cards are moved again to the final repository (blue face component).</p>
+              <p class="text-justify">
+                 One of the main problems to take care in this project is the mechanical aparatus to make cards move.
+                 The load bay first issue is to make cards available on top to move to the next area.
+                 A spring is my first idea with servos connected to a Arduino board (or FABduino) as operators.</p>
+
+              <br>
+                  <img class="img-thumbnail rounded mx-auto d-block" src="fabdata/images/week3/w3_finalp.png" alt="Final project model">
+              <br>
+
+             
+        </div>
+
+        <!-- Side Info -->
+        <div class="col-4">
+          <p>
+            <h5>Downloads</h5>
+            <ul>
+               <li><a href="fabdata/files/week3/week3.rar">This week projects</a></li>
+               <li><a href="fabdata/files/week3/w3_vault.rar">Card holder</a></li>
+               <li><a href="fabdata/files/week3/w3_svgfiles.rar">SVG files</a></li>
+               <li><a href="fabdata/files/week3/w3_finalp.rar">Final project model</a></li>
+            </ul>
+          </p>
+        </div>
+
+      </div>  <!--   Row Closure -->
+
+    </div>  <!--Container Closure -->
+
+</div> <!--Big Div Closure -->
+
 </main>
 
 <!--End of content-->
 
 <!--Footer-->
-<footer class="text-muted">
+<footer class="text-white bg-dark">
   <p class="text-center">Diego Santa Cruz Meono</p>
   <p class="text-center">FabAcademy 2019</p>
 </footer>
@@ -190,5 +279,7 @@
     <script src="bootstrap\js\jquery-slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
   </body>
+
 </html>
